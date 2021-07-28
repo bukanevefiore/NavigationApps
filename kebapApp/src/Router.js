@@ -10,6 +10,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Welcome from './pages/Welcome';
+import MemberSign from './pages/MemberSign';
+import MemberSignResult from './pages/MemberResult';
 
 
 const Stack = createStackNavigator();
@@ -20,6 +22,8 @@ function Routes({navigation}) {
     <NavigationContainer>
       <Stack.Navigator  screenOptions={{headerShown: false}}>
         <Stack.Screen name="Welcome" component={Welcome} />
+        <Stack.Screen name="MemberSignScreen" component={MemberSign} />
+        <Stack.Screen name="MemberSignResultScreen" component={MemberSignResult} />
       </Stack.Navigator>
     </NavigationContainer>
   )

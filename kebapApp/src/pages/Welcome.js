@@ -4,10 +4,15 @@ import Button from '../components/Button';
 
 
 export default Welcome = ({navigation}) => {
+
+    function goToMemberSign() {
+        navigation.navigate('MemberSignScreen');
+    }
+
     return(
         <SafeAreaView style={styles.container}>
-            <Text style={styles.header}>Welcome</Text>
-            <Button text="Üye Kaydı Oluştur" onPress={null} />
+            <Text style={styles.header}>Kebap Spor Salonu</Text>
+            <Button text="Üye Kaydı Oluştur" onPress={goToMemberSign} />
         </SafeAreaView>
     );
 }
